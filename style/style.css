@@ -1,0 +1,377 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+:root {
+    --accent-color: #3F2AFF;
+}
+
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto-Regular'), url('../font/Roboto-Regular.woff2') format('woff2'), url('../font/Roboto-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    src: local('Roboto-Bold'), url('../font/Roboto-Bold.woff2') format('woff2'), url('../font/Roboto-Bold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+
+/*Globe*/
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-reset {
+
+    padding: 0;
+    list-style: none;
+}
+
+.section-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+}
+
+.section-content-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.section-descr {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 20px 59px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+    border-radius: 20px;
+}
+
+/*Header*/
+
+.burger {
+    display: none;
+}
+
+.header {
+    background-color: var(--accent-color);
+}
+
+.header__content {
+    align-items: center;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 56px;
+}
+
+.nav__item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.nav__close {
+    display: none;
+}
+
+.header__logo {
+    margin-right: auto;
+    padding: 28px 0;
+}
+
+
+/*Hero*/
+
+.hero {
+    background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+    padding-top: 21px;
+    padding-bottom: 40px;
+}
+
+.hero__content {
+    padding-top: 109px;
+}
+
+.hero__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin-bottom: 28px;
+}
+
+.hero__descr {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 62px;
+}
+
+.hero__btn {
+    padding: 24px 75px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+    border-radius: 20px;
+}
+
+
+/*Advantages*/
+.advantages {
+    padding-top: 40px;
+    padding-bottom: 82px;
+}
+
+.advantages__image {
+    padding-top: 22px;
+}
+
+.advantages__title {
+    margin-bottom: 18px;
+}
+
+.advantages__descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #666666;
+}
+
+.advantages__item {
+    padding: 12px 0;
+    padding-left: 112px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.advantages__list {
+    padding-bottom: 20px;
+}
+.advantages__image1 {
+    background-image: url('../image/advantages_img2.png');
+}
+
+.advantages__image2 {
+    background-image: url('../image/advantages_img3.png');
+}
+
+.advantages__image3 {
+    background-image: url('../image/advantages_img4.png');
+}
+
+
+.advantages__item-descr {
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: #666666;
+}
+
+
+/*Teachers*/
+
+.teachers {
+    background-color: #212133;
+    padding-top: 74px;
+    padding-bottom: 58px;
+}
+
+.teachers__title {
+    color: #FFFFFF;
+    margin-bottom: 23px;
+}
+
+.teachers__card {
+    height: 100%;
+    padding-top: 209px;
+    border-radius: 21px 21px 0 0;
+
+}
+
+.teachers-photo1 {
+    background-image: url('../image/teacher_img1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.teachers-photo2 {
+    background-image: url('../image/teacher_img2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.teachers-photo3 {
+    background-image: url('../image/teacher_img3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.teachers-photo4 {
+    background-image: url('../image/teacher_img4.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.teachers__card-title {
+    color: #FFFFFF;
+    margin-bottom: 7px;
+}
+
+.teachers__card-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #85859B;
+}
+
+/*Courses*/
+
+
+.courses {
+    padding-top: 74px;
+    padding-bottom: 64px;
+}
+
+
+.courses__card {
+    padding: 214px 32px 28px 32px;
+    background-color: #EDF0F9;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.courses__section-card {
+    padding-top: 18px;
+}
+
+.courses-img1 {
+    background-image: url('../image/courses_img1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.courses-img2 {
+    background-image: url('../image/courses_img2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.courses-img3 {
+    background-image: url('../image/courses_img3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.courses-img4 {
+    background-image: url('../image/courses_img4.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.courses__descr {
+    flex-basis: 100%;
+}
+
+
+
+.courses__title {
+    color: #212133;
+    margin-bottom: 22px;
+}
+
+.courses__card-title {
+    color: #212133;
+    margin-bottom: 7px;
+}
+
+.courses__card-descr {
+    font-size: 16px;
+    line-height: 150%;
+    color: #666666;
+    margin-bottom: 10%;
+}
+
+
+/*Footer*/
+
+.footer {
+    background-color: #2E2B44;
+}
+
+.social {
+   padding: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.copy {
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #2E2B44;
+}
