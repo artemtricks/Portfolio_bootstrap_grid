@@ -260,6 +260,7 @@ body {
     background-image: url('../image/teacher_img3.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
+    filter: contrast(1.2) brightness(1.1);
 }
 
 .teachers-photo4 {
