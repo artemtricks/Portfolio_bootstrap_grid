@@ -1,6 +1,6 @@
 # My bootstrap_grid page
 
-- HTML
+- HTML (with Bootstrap grid)
 - CSS
 - JS
 <br>
